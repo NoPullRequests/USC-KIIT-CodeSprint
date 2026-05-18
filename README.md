@@ -1,11 +1,12 @@
 # USC-KIIT-CodeSprint
 Repository documenting my solutions, approaches, and learnings from USC KIIT CodeSprint contests, including problem-solving strategies and progress tracking.
 
-Solutions and notes from USC KIIT CodeSprint contests.
+Tracking my coding consistency through USC KIIT CodeSprint by uploading solutions, notes, and daily progress.
 
 ## Structure
-- contests/ → contest solutions
-- resources/ → workflows or templates
+- logs/ → daily updates and learnings
+- solutions/ → solved problems by topic
+- resources/ → workflows
 
 ## Goal
-Improve problem solving and learn from mistakes.
+Build consistency, improve problem-solving, and learn from mistakes.
