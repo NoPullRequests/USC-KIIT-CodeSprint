@@ -6,7 +6,6 @@ Solutions and notes from USC KIIT CodeSprint contests.
 ## Structure
 - contests/ → contest solutions
 - resources/ → workflows or templates
-- daily-practice/ → extra problems
 
 ## Goal
 Improve problem solving and learn from mistakes.
