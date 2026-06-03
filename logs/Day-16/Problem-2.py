@@ -1,21 +1,25 @@
-total = int(input())
+inputData = input().split()
+n = int(inputData[0])
+k = int(inputData[1])
+x = int(inputData[2])
 
-participants = []
-while len(participants) < total:
-    line = input().strip()
-    if line:
-        parts = line.split()
-        name = parts[0]
-        score = int(parts[1])
-        participants.append([name, score])
+arr = list(map(int, input().split()))
 
-for i in range(total):
-    for j in range(0, total - i - 1):
-        if participants[j][1] > participants[j + 1][1]:
-            temp = participants[j]
-            participants[j] = participants[j + 1]
-            participants[j + 1] = temp
+foundStreak = False
 
-for i in range(total):
-    print(participants[i][0], participants[i][1])
+for i in range(n - k + 1):
+    currentSum = 0
+    hasZero = False
+    
+    for j in range(i, i + k):
+        currentSum = currentSum + arr[j]
+        if arr[j] == 0:
+            hasZero = True
+            
+    if currentSum >= x and hasZero == False:
+        foundStreak = True
 
+if foundStreak == True:
+    print("YES")
+else:
+    print("NO")
