@@ -10,7 +10,8 @@ for value in weights:
         head = node
         tail = node
     else:
-        tail["next"] = node
+        if tail is not None:
+            tail["next"] = node
         tail = node
 
 prev = None
