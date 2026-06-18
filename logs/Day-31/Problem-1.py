@@ -1,6 +1,6 @@
 import sys
 
-def main():
+def solve():
     lines = sys.stdin.read().splitlines()
     if not lines:
         return
@@ -25,4 +25,4 @@ def main():
             print(m_s[-1] if m_s else -1)
 
 if __name__ == '__main__':
-    main()
+    solve()
